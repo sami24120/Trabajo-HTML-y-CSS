@@ -1,0 +1,115 @@
+/* Los estilos para el menu y todo lo otro son los mismos que las otros archivos CSS,
+y luego ya dependiendo de la pagina añado otras cosas diferntes, en este caso he tenido 
+que poner estilo a las imagenes 
+*/
+  
+  h1 {
+    font-size: 40px;
+    margin: 0;
+    }
+    
+    ul li {
+    display: inline-block;
+    }
+    
+    ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    }
+    
+    ul li a:hover {
+    background-color: #fff;
+    color: #c4001d;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.2s;
+      }
+      
+      img:hover {
+        transform: scale(1.1);
+      }
+      
+      img::after {
+        content: attr(alt);
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.2s;
+        font-size: 16px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      
+      img:hover::after {
+        opacity: 1;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+      }
+      
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      nav ul li {
+        margin-right: 20px;
+        position: relative;
+      }
+      
+      nav ul li a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      nav ul li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        display: none;
+      }
+      
+
+		/* Estilo para el menú superior */
+		nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+		}
+
+		/* Estilo para las fotos */
+		.img {
+			margin: 20px;
+			max-width: 100%;
+			height: auto;
+      
+		}
+
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    
+
+

@@ -1,0 +1,124 @@
+
+body {
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+	font-family: Arial
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    }
+    
+    nav li {
+    margin-right: 20px;
+    }
+    
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    }
+    
+    nav a:hover {
+    text-decoration: underline;
+    }
+    
+    
+    h1 {
+    font-size: 40px;
+    margin: 0;
+    }
+    
+    ul li {
+    display: inline-block;
+    }
+    
+    ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    }
+    /* Los estilos para el menu y todo lo otro son los mismos que las otros archivos CSS,
+    en esta pagina le he metido un estilo al background, cuando entro tarsa unos segundos para que aparezca
+
+
+    */
+
+
+    ul li a:hover {
+    background-color: #fff;
+    color: #c4001d;
+    }
+    
+
+  nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: blue;
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 3; }
+}
+
+img {
+  transition: transform 1.5s ease;
+}

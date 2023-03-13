@@ -1,0 +1,126 @@
+/* Los estilos para el menu y todo lo otro son los mismos que las otros archivos CSS,
+en el formulario he añadido un gif para el background
+
+
+*/
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  label {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  input, select {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  input[type="submit"], input[type="reset"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #666;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    }
+    
+    nav li {
+    margin-right: 20px;
+    }
+    
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    }
+    
+    nav a:hover {
+    text-decoration: underline;
+    }
+    
+    
+    h1 {
+    font-size: 40px;
+    margin: 0;
+    }
+    
+    ul li {
+    display: inline-block;
+    }
+    
+    ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    }
+    
+    ul li a:hover {
+    background-color: #fff;
+    color: #c4001d;
+    }
+    
+
+  nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: blue;
+    color: #333;
+}
+
+
+body {
+  background-image: url('gif.gif');
+  background-size: cover;
+  background-position: center;
+  animation-name: background-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background-animation {
+  0% {
+    background-color: #ffffff;
+  }
+  50% {
+    background-color: #f1f1f1;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
